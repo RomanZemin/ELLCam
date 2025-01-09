@@ -12,7 +12,7 @@
                     +7 (999) 311-60-00
                 </a>
             </p>
-            <button class="button">
+            <button class="button" @click="sendMessage">
                 ОСТАВИТЬ ЗАЯВКУ
             </button>
         </div>
@@ -20,7 +20,11 @@
 </template>
 
 <script setup>
+const sendMessage = (() => {
+    const message = "Здравствуйте! Меня заинтересовала покупка товара."
 
+    window.location.href = "https://t.me/Ell_Group?text=" + message;
+});
 </script>
 
 <style scoped>

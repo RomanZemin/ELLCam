@@ -4,7 +4,7 @@
             <source src="../assets/background-video.mp4" type="video/mp4">
             Ваш браузер не поддерживает видео.
         </video>
-        <NavBar />
+        <NavBar class="navigation"/>
         <div class="main-content">
             <h1>
                 Ell Group.
@@ -53,7 +53,10 @@ video {
     z-index: -1;
     transform: translate(-50%, -50%);
 }
-
+.navigation{
+    position: relative;
+    z-index: 2;
+}
 .main-content {
     position: relative;
     z-index: 1;
