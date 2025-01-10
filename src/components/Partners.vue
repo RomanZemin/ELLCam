@@ -110,11 +110,11 @@ const submitForm = () => {
         Subject: "Новая заявка",
         Body: `Имя: ${name}<br>Почта: ${email}<br>Телефон: ${phone}<br>Сообщение: ${message}`
     })
-    .then((message) => {
+    .then(() => {
         alert("Заявка отправлена!");
         closeModal();
     })
-    .catch((error) => {
+    .catch(() => {
         alert('Ошибка при отправке заявки.');
     });
 };
