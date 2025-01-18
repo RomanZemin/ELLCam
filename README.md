@@ -1,1 +1,1 @@
-https://ellcam.ru/
+**[View landing](https://ellcam.ru/)**
